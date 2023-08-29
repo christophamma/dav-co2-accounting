@@ -1308,6 +1308,17 @@ qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
 testing = ["docopt", "pytest (<6.0.0)"]
 
 [[package]]
+name = "pastel"
+version = "0.2.1"
+description = "Bring colors to your terminal."
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+files = [
+    {file = "pastel-0.2.1-py2.py3-none-any.whl", hash = "sha256:4349225fcdf6c2bb34d483e523475de5bb04a5c10ef711263452cb37d7dd4364"},
+    {file = "pastel-0.2.1.tar.gz", hash = "sha256:e6581ac04e973cac858828c6202c1e1e81fee1dc7de7683f3e1ffe0bfd8a573d"},
+]
+
+[[package]]
 name = "pexpect"
 version = "4.8.0"
 description = "Pexpect allows easy control of interactive console applications."
@@ -1361,6 +1372,24 @@ files = [
 [package.extras]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "poethepoet"
+version = "0.22.0"
+description = "A task runner that works well with poetry."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "poethepoet-0.22.0-py3-none-any.whl", hash = "sha256:f654e52c19b7c689d5293ab6a065787b21f125884c0b367650292df4f3cb508c"},
+    {file = "poethepoet-0.22.0.tar.gz", hash = "sha256:659d7678fd8b349bd40941e3de7d6d386171dab3e7c8babcdcd8ead288c9ea47"},
+]
+
+[package.dependencies]
+pastel = ">=0.2.1,<0.3.0"
+tomli = ">=1.2.2"
+
+[package.extras]
+poetry-plugin = ["poetry (>=1.0,<2.0)"]
 
 [[package]]
 name = "prometheus-client"
@@ -1553,74 +1582,6 @@ files = [
     {file = "pyrsistent-0.19.3-cp39-cp39-win_amd64.whl", hash = "sha256:878433581fc23e906d947a6814336eee031a00e6defba224234169ae3d3d6a98"},
     {file = "pyrsistent-0.19.3-py3-none-any.whl", hash = "sha256:ccf0d6bd208f8111179f0c26fdf84ed7c3891982f2edaeae7422575f47e66b64"},
     {file = "pyrsistent-0.19.3.tar.gz", hash = "sha256:1a2994773706bbb4995c31a97bc94f1418314923bd1048c6d964837040376440"},
-]
-
-[[package]]
-name = "pyside6"
-version = "6.4.0.1"
-description = "Python bindings for the Qt cross-platform application and UI framework"
-optional = false
-python-versions = "<3.12,>=3.7"
-files = [
-    {file = "PySide6-6.4.0.1-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:a45ea81fa4d1fdb7aeb7250508b07fa209e6bfb26becf5b24751d3769cade292"},
-    {file = "PySide6-6.4.0.1-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:90bb074469c37155c69fbfe85d85d23e52973df784bf7bc0d36c646ebdf985a4"},
-    {file = "PySide6-6.4.0.1-cp37-abi3-win_amd64.whl", hash = "sha256:e255f9cb5fa13c4f4c8a1e90f3e6619336787d8700f476b8bb3d432917c68ed6"},
-    {file = "PySide6-6.4.0.1-pp39-pypy39_pp73-macosx_10_9_universal2.whl", hash = "sha256:1821f3f06357961ddf63db1bd73b3d91b5d7a57ce27994bf8ba910a930a411c9"},
-    {file = "PySide6-6.4.0.1-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:ab4f5913cf3a97ed2a5a388b781887e50750142b847e57b52ffa15bb0510af9d"},
-    {file = "PySide6-6.4.0.1-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:3dae6611f425da55fcc2ed0494496a07812751a89c2f9801f6072a3349106a62"},
-]
-
-[package.dependencies]
-PySide6-Addons = "6.4.0.1"
-PySide6-Essentials = "6.4.0.1"
-shiboken6 = "6.4.0.1"
-
-[[package]]
-name = "pyside6-addons"
-version = "6.4.0.1"
-description = "Python bindings for the Qt cross-platform application and UI framework (Addons)"
-optional = false
-python-versions = "<3.12,>=3.7"
-files = [
-    {file = "PySide6_Addons-6.4.0.1-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:a9f55608e4b1ff8a35305e2d4341f5f735ad3eafa042dff7381792b84e0c50c8"},
-    {file = "PySide6_Addons-6.4.0.1-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:fc993a682a290ec63ba3f8b4cf66de8185b076bb6e77756e8d256b643b74cf41"},
-    {file = "PySide6_Addons-6.4.0.1-cp37-abi3-win_amd64.whl", hash = "sha256:ed9653074e33b417ec51dfae4852cbf4aaeda1856ce877f85d58854784baa3dc"},
-    {file = "PySide6_Addons-6.4.0.1-pp39-pypy39_pp73-macosx_10_9_universal2.whl", hash = "sha256:4bcf6e86d53f0ac92092bb66a6a3ee40fa8ff9e46f8418bdec9d6d95256211f4"},
-    {file = "PySide6_Addons-6.4.0.1-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:d5e4f11efc360be8f93cd9a8837019f6ea79cd63e0770c3c2917d7c4b44bc55c"},
-    {file = "PySide6_Addons-6.4.0.1-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:43d21d7cfb2e507e293cced61b13e1d125212c6b650a61ab97ce7fe9a758008e"},
-]
-
-[package.dependencies]
-PySide6-Essentials = "6.4.0.1"
-shiboken6 = "6.4.0.1"
-
-[[package]]
-name = "pyside6-essentials"
-version = "6.4.0.1"
-description = "Python bindings for the Qt cross-platform application and UI framework (Essentials)"
-optional = false
-python-versions = "<3.12,>=3.7"
-files = [
-    {file = "PySide6_Essentials-6.4.0.1-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:7f1d2d3b1aa5f2ababc6a25d0c0748fc41f6aa0d79626f98e0c86d1805928a1a"},
-    {file = "PySide6_Essentials-6.4.0.1-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:1ba1c475568392db633da032799ff84e4b1c8e0ba863e88118b4f5ae0c312fb1"},
-    {file = "PySide6_Essentials-6.4.0.1-cp37-abi3-win_amd64.whl", hash = "sha256:0c1f968699c4c1d2e131fd5c690228170f764324e6dc0e1b80f978fbc29923de"},
-    {file = "PySide6_Essentials-6.4.0.1-pp39-pypy39_pp73-macosx_10_9_universal2.whl", hash = "sha256:3ea3b8b7bb792ad6a58d1186606ff6a3a782b09007dc4517649fe300d7beaf51"},
-    {file = "PySide6_Essentials-6.4.0.1-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:8cbc5cb78e78f6c2dfe225ce997c198e8a95a19b3f44b8d3ccc14a324d6b6e9c"},
-    {file = "PySide6_Essentials-6.4.0.1-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:6950ad5d946a61a879634d14cb1bb0205f157b9d270fdc536049d1444aeb14d0"},
-]
-
-[package.dependencies]
-shiboken6 = "6.4.0.1"
-
-[[package]]
-name = "pysimplegui"
-version = "4.60.4"
-description = "Python GUIs for Humans. Launched in 2018. It's 2022 & PySimpleGUI is an ACTIVE & supported project. Super-simple to create custom GUI's. 325+ Demo programs & Cookbook for rapid start. Extensive documentation. Main docs at www.PySimpleGUI.org. Fun & your success are the focus. Examples using Machine Learning (GUI, OpenCV Integration), Rainmeter Style Desktop Widgets, Matplotlib + Pyplot, PIL support, add GUI to command line scripts, PDF & Image Viewers. Great for beginners & advanced GUI programmers."
-optional = false
-python-versions = "*"
-files = [
-    {file = "PySimpleGUI-4.60.4-py3-none-any.whl", hash = "sha256:e133fbd21779f0f125cebbc2a4e1f5a931a383738661013ff33ad525d5611eda"},
-    {file = "PySimpleGUI-4.60.4.tar.gz", hash = "sha256:f88c82c301a51aea35be605dc060bcceb0dcb6682e16280544884701ab4b23ba"},
 ]
 
 [[package]]
@@ -1951,21 +1912,6 @@ files = [
 nativelib = ["pyobjc-framework-Cocoa", "pywin32"]
 objc = ["pyobjc-framework-Cocoa"]
 win32 = ["pywin32"]
-
-[[package]]
-name = "shiboken6"
-version = "6.4.0.1"
-description = "Python/C++ bindings helper module"
-optional = false
-python-versions = "<3.12,>=3.7"
-files = [
-    {file = "shiboken6-6.4.0.1-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:491f3394c771e6da85b89ec39394da76b4e11d4ff697250f8ea26f0a08eb2471"},
-    {file = "shiboken6-6.4.0.1-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:e7f91a1f88ec27b2039df1ea4c92eb89cf7c93d80f93363db66f7a226dad9439"},
-    {file = "shiboken6-6.4.0.1-cp37-abi3-win_amd64.whl", hash = "sha256:8056529749dcad1f0f9b4b1113898de0f39f8b83cd09a38eaf9252f3fef681ad"},
-    {file = "shiboken6-6.4.0.1-pp39-pypy39_pp73-macosx_10_9_universal2.whl", hash = "sha256:3031d769ced7018bcc96cced81e2a79afc5424071fbf819802c48aafe4d2da1d"},
-    {file = "shiboken6-6.4.0.1-pp39-pypy39_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:09f27c7425ecd2ce6debdf7771a56b2fbc36527b6097b3a1b21339c61287f842"},
-    {file = "shiboken6-6.4.0.1-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:edd3c3abcff8fee7fc6051d0c63a72fcfc1451e0fd60094430d35aa1720000bf"},
-]
 
 [[package]]
 name = "six"
@@ -2331,4 +2277,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "406194859a7d82beeb17fcd8cd695cfbda168e187fc40f87eb50d7329166634f"
+content-hash = "629436cded0c387f2901d728f7aa9ae07aad6ce05b4bca0990d8ea21c518b8ef"

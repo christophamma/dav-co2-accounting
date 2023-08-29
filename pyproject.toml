@@ -2,21 +2,23 @@
 name = "co2data"
 version = "0.1.0"
 description = "Make data entry for planetly from scanned bills easier"
-authors = ["t.org"]
+authors = ["Christoph Amma"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
 pytest = "^7.2.0"
-pysimplegui = "^4.60.4"
 pymupdf = "^1.21.0"
-pyside6 = "^6.4.0.1"
 jupyter = "^1.0.0"
 wand = "^0.6.11"
 voila = "^0.4.0"
 jupyterlab = "^4.0.3"
+poethepoet = "^0.22.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+co2tool = "voila notebook/test_ui.ipynb"
