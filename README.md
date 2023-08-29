@@ -15,6 +15,12 @@ poetry install
 This will install all project dependencies in a separate poetry managed virtual python environment.
 
 ## Run it
+
+Optionally place an example bill in the pdf directory:
+```shell
+curl -o pdf/example_bill.pdf https://www.ionos.de/startupguide/fileadmin/StartupGuide/Vorlagen_KMU/Rechnungsvorlage-Muster.pdf
+```
+
 Run the tool with
 ```shell
 poetry run poe co2tool
