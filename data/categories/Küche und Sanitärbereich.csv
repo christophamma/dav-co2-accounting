@@ -1,0 +1,31 @@
+Datenpunkt;Beschreibung;Beispiel;Einheit
+Wasser;z.B. Mineralwasser etc.;1000;Liter
+Säfte & Schorlen;z.B. Apfel, Orange, Multivitamin, Grapefruit, Traube, Birne, Ananas, Maracuja etc.;1000;Liter
+Softdrinks;z.B. Cola, Fanta, Sprite etc.;1000;Liter
+Alkoholische Getränke;z.B. Bier, Wein, Wodka etc.;1000;Liter
+Kaffee;z.B. Kaffeebohnen;20;kg
+Kakao;z.B. Kakaopulver, Schokolade, Nutella;10;kg
+Obst & Gemüse;z.B. Kartoffel, Karotte, Zwiebeln, Salat, Apfel, Banane, Nüsse etc.   ;300;kg
+Milchprodukte;z.B. Milch, Jogurt, Käse, Eiscreme/Speiseeis etc.;300;kg
+Milchersatzprodukte;z.B. Sojaprodukte, Mandelmilch, Hafermilch etc.;100;kg
+Eier (Gewicht) ;1 Ei = 0.04kg ;300;kg
+Eier (Stückzahl);;20;Stück
+Fleisch/Fisch;z.B. Hähnchen, Lamm, Pute, Rindfleisch, Lachs, Wurst etc.;300;kg
+Alternatives Protein;z.B. Tofu, vegane Burgerbratlinge, veganes Schnitzel, vegane Nuggets etc. ;100;kg
+Teigwaren & Mehl;z.B. Weizenmehl, Vollkornmehl, Hartweizenmehl, Maismehl, Haferflocken etc.;300;kg
+Reis;z.B. brauner Reis/Vollkorn, weißer Reis, etc.;100;kg
+Hülsenfrüchte ;z.B. Mais, Bohnen, Erbsen, Linsen etc.;100;kg
+Zucker;z.B. Zucker, Braunzucker, Puderzucker;20;kg
+Fette & Öle;z.B. Olivenöl, Rapsöl, Sonnenblumenöl ;100;Liter
+Gewürze;z.B. Salz, Pfeffer, Oregano, andere Gewürze etc.;100;kg
+Soßen;z.B. Ketchup, Mayo, Senf, andere Soßen etc.;100;kg
+Fertigprodukte & Konserven;z.B. Flammkuchen, Pizza, Kartoffelsalat, Kartoffelknödel, Kaiserschmarrn, Apfelmus, Marmelade, Marzipan etc. aber auch Pesto, Konservendosen mit Bohnen, Mais etc.;100;kg
+Tiefkühlprodukte;z.B. Tiefkühl-Pizzen, Tiefkühlbrezeln, etc.;100;kg
+Anderes;z.B. Kleinigkeiten, abgepackte Snacks, etc.;500;EUR
+Haushaltsmittel;z.B. Toilettenpapier, Küchenrolle, Alufolie etc. und Kleinigkeiten wie Besen, Staubsaugerbeutel und Seife etc.;100;kg
+Reinigungsmittel (kg);Separat gekaufte Reinigungsmittel, die nicht in der Dienstleistung inkludiert sind (siehe unter (Reinigungs-)Dienstleistungen) - entweder über kg bilanzieren oder über Liter. Achtung: Doppelbilanzierungen vermeiden!;200;kg
+Reinigungsmittel (Liter);Separat gekaufte Reinigungsmittel, die nicht in der Dienstleistung inkludiert sind (siehe unter (Reinigungs-)Dienstleistungen) - entweder über kg bilanzieren oder über Liter. Achtung: Doppelbilanzierungen vermeiden!;200;Liter
+Küchenausstattung Metall;z.B. Töpfe, Besteck etc.;5;kg
+Küchenausstattung Porzellan ;z.B. Geschirr ;5;kg
+Küchenausstattung Glas;z.B. Glas und Glasprodukte;5;kg
+Küchenausstattung Holz;z.B. Holzmöbel wie Stühle, Tische etc. auch Gastraumausstattung;5;kg
