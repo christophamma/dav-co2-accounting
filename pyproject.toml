@@ -14,6 +14,7 @@ wand = "^0.6.11"
 voila = "^0.4.0"
 jupyterlab = "^4.0.3"
 poethepoet = "^0.22.0"
+jsonpickle = "^3.0.2"
 
 
 [build-system]
