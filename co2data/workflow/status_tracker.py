@@ -5,6 +5,8 @@ from enum import Enum
 from pathlib import Path
 from typing import List, Dict
 
+import jsonpickle
+
 from co2data.bills.bill import Bill
 from co2data.bills.bill_id import BillId
 from co2data.bills.bill_store import BillStore
@@ -38,13 +40,7 @@ class StatusTracker:
         """
         self.bill_status[bill_id] = status
 
-    def save(self, file_path: Path) -> None:
-        """
-        Save the status of all Bills to a file
-        :param file_path: path to output file
-        """
-        with open(file_path, "w", encoding="utf-8") as filehandle:
-            json.dump(self.bill_status, filehandle)
+    
 
     @classmethod
     def load(cls, file_path: Path) -> StatusTracker:

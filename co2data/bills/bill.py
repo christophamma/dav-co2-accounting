@@ -21,9 +21,10 @@ class Bill:
     file_identifier: str
     positions: List[Position]
 
-    def add_position(self, category: Category, amount: float, page_on_pdf = None, comment = "") -> None:
-        position = Position(category, amount, comment, page_on_pdf)
-        self.positions.append(position)
+    def add_position(self, position: Position, index: int) -> None:
+        """Insert position before given index."""
+        self.positions.insert(index, position)
 
     def delete_position(self, index: int) -> None:
+        """Delete position at given index."""
         self.positions.pop(index)

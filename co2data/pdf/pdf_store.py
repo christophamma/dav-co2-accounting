@@ -9,6 +9,10 @@ class PdfStore(ABC):
     """Provides access to the pdf files"""
 
     @abstractmethod
+    def has(self, file_identifier: str) -> bool:
+        """Return true if file identifier exists, false otherwise."""
+
+    @abstractmethod
     def get(self, file_identifier: str) -> BinaryIO:
         """Return pdf as binary io stream"""
 
