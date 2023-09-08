@@ -13,12 +13,12 @@ class BillStore(ABC):
 
     @abstractmethod
     def get(self, bill_id: BillId) -> Bill:
-        """Return bill for given bill_id"""
+        """Return bill for given bill_id."""
 
     @abstractmethod
     def all(self) -> List[BillId]:
         """Return list of all stored bill ids."""
 
     @abstractmethod
-    def add_pdf(self, pdf_path: Path) -> BillId:
-        """Add a bill by providing the pdf and return a new unique BillId for this bill"""
+    def add(self, file_identifier: str):
+        """Add a bill by providing the file identifier."""
