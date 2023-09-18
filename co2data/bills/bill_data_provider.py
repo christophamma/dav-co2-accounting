@@ -2,6 +2,7 @@ from typing import List
 
 from co2data.bills.bill import Position
 from co2data.bills.bill_id import BillId
+from co2data.bills.bill_status import BillStatus
 from co2data.bills.bill_store import BillStore
 
 
@@ -31,3 +32,19 @@ class BillDataProvider:
     def delete_position(self, bill_id: BillId, index: int) -> None:
         """Delete position at given index."""
         self._bill_store.get(bill_id).delete_position(index)
+
+    def get_by_status(self, status: BillStatus) -> List[BillId]:
+        """
+        Get the list of all Bill Ids with the given status.
+        :param status: status to filter for
+        :return: List of Bill Ids
+        """
+        return [bill_id for bill_id in self.bill_ids if self._bill_store.get(bill_id).status == status]
+
+    def set_status(self, bill_id: BillId, status: BillStatus) -> None:
+        """
+        Set the status of a bill.
+        :param bill_id: Bill id to set status for
+        :param status: new status
+        """
+        self._bill_store.get(bill_id).status = status
