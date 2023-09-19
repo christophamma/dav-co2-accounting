@@ -1,12 +1,17 @@
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import BinaryIO
+from typing import BinaryIO, List
 
 from co2data.bills.bill_id import BillId
 
 
 class PdfStore(ABC):
     """Provides access to the pdf files"""
+
+    @property
+    @abstractmethod
+    def identifiers(self) -> List[str]:
+        """Return all available file identifiers."""
 
     @abstractmethod
     def has(self, file_identifier: str) -> bool:

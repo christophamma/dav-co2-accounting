@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import BinaryIO, Dict
+from typing import BinaryIO, Dict, List
 
 from co2data.bills.bill_id import BillId
 from co2data.pdf.pdf_store import PdfStore
@@ -12,6 +12,10 @@ class FileSystemPdfStore(PdfStore):
 
     def __init__(self):
         self.files: Dict[str, Path] = {}
+
+    @property
+    def identifiers(self) -> List[str]:
+        return list(self.files.keys())
 
     def has(self, file_identifier: str) -> bool:
         return file_identifier in self.files
