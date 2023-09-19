@@ -14,7 +14,7 @@ class Position(JSONWizard):
     category: Category
     amount: float
     comment: str
-    page_on_pdf: Optional[int] = None
+    page_on_pdf: int
 
 
 @dataclass
