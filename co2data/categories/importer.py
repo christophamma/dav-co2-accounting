@@ -11,11 +11,11 @@ def create_category_provider_from_directory(directory: Path) -> CategoryProvider
     categories = []
     for csv_file in directory.glob("*.csv"):
         with open(csv_file, "r", encoding="utf-8") as filehandle:
-            categories.extend(import_csv(filehandle))
+            categories.extend(import_csv(filehandle, csv_file.stem))
     return ConcreteCategoryProvider(categories)
 
 
-def import_csv(csv_file: TextIO) -> List[Category]:
+def import_csv(csv_file: TextIO, area: str) -> List[Category]:
     """
     Read a list of categories from a csv file.
 
@@ -24,6 +24,7 @@ def import_csv(csv_file: TextIO) -> List[Category]:
     The delimiter must be a semicolon.
 
     :param csv_file: TextIO object to read data from
+    :param area: Name of the category area for this file
     """
     csv_name = 'Datenpunkt'
     csv_description = 'Beschreibung'
@@ -33,5 +34,5 @@ def import_csv(csv_file: TextIO) -> List[Category]:
     categories = []
     for row in category_reader:
         if row[csv_name] != '':
-            categories.append(Category(row[csv_name], row[csv_example], row[csv_unit], row[csv_description]))
+            categories.append(Category(area, row[csv_name], row[csv_example], row[csv_unit], row[csv_description]))
     return categories

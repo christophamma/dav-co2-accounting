@@ -19,3 +19,9 @@ class ConcreteCategoryProvider(CategoryProvider):
 
     def get_all(self) -> List[Category]:
         return self.categories
+
+    def get_areas(self) -> List[str]:
+        return list(sorted(set([category.area for category in self.categories])))
+
+    def get_categories_for_area(self, area: str) -> List[Category]:
+        return [category for category in self.categories if category.area == area]

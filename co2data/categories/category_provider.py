@@ -13,4 +13,12 @@ class CategoryProvider(ABC):
 
     @abstractmethod
     def get_by_name(self, name: str) -> Category:
-        """Return Category by name"""
+        """Return Category by name."""
+
+    @abstractmethod
+    def get_areas(self) -> List[str]:
+        """Return all category areas."""
+
+    @abstractmethod
+    def get_categories_for_area(self, area: str) -> List[Category]:
+        """Return all categories of a given area."""
