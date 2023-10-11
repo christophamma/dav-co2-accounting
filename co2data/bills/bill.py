@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List
 
 from dataclass_wizard import JSONWizard
 
@@ -12,6 +12,7 @@ from co2data.categories.category import Category
 class Position(JSONWizard):
     """One Bill Position"""
     category: Category
+    department: str
     amount: float
     comment: str
     page_on_pdf: int
