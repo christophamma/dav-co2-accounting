@@ -48,3 +48,12 @@ class BillDataProvider:
         :param status: new status
         """
         self._bill_store.get(bill_id).status = status
+
+    def add_comment(self, bill_id: BillId, comment: str) -> None:
+        """
+        Add a comment to the bill, existing comment will be overwritten.
+
+        :param bill_id: bill id to add comment to.
+        :param comment: comment to add
+        """
+        self._bill_store.get(bill_id).comment = comment
