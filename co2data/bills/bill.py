@@ -13,7 +13,9 @@ class Position(JSONWizard):
     """One Bill Position"""
     category: Category
     department: str
+    value: float
     amount: float
+    price: float
     comment: str
     page_on_pdf: int
 
