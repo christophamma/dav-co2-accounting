@@ -33,6 +33,20 @@ class BillDataProvider:
         """Delete position at given index."""
         self._bill_store.get(bill_id).delete_position(index)
 
+    def move_position_up(self, bill_id: BillId, index: int) -> None:
+        """Move position at given index up towards start of list by one."""
+        bill = self._bill_store.get(bill_id)
+        if index > 0:
+            new_index = index - 1
+            bill.positions.insert(new_index, bill.positions.pop(index))
+
+    def move_position_down(self, bill_id: BillId, index: int) -> None:
+        """Move position at given index down towards end of list by one."""
+        bill = self._bill_store.get(bill_id)
+        if index <= len(bill.positions) - 2:
+            new_index = index + 1
+            bill.positions.insert(new_index, bill.positions.pop(index))
+
     def get_by_status(self, status: BillStatus) -> List[BillId]:
         """
         Get the list of all Bill Ids with the given status.
