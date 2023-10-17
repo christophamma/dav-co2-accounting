@@ -1,4 +1,5 @@
-/pdf/
+pdf/
 .idea
 __pycache__
-/dav_bills/
+dav_bills/
+datadir
