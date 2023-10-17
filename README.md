@@ -2,27 +2,22 @@
 Diese Tool erleichtert die Eingabe der Rechnungsdaten für die DAV Klimabilanz
 
 ## Prerequisites
-We use [Poetry](https://python-poetry.org/) for package management.
-
-Install it by following the installation instructions at https://python-poetry.org/docs/
-
+You need to be able to run Docker Containers.
 
 ## Installation
 
-To install run
+Pull the docker container
 ```sh
-poetry install
+docker pull ghcr.io/christophamma/dav-co2-accounting:main
 ```
-This will install all project dependencies in a separate poetry managed virtual python environment.
 
-## Run it
+## Usage
 
-Optionally place an example bill in the pdf directory:
+Run the container with
 ```shell
-curl -o pdf/example_bill.pdf https://www.ionos.de/startupguide/fileadmin/StartupGuide/Vorlagen_KMU/Rechnungsvorlage-Muster.pdf
+docker run -p 8866:8866 -v <LOCAL_DATA_DIRECTORY>:/root/dav-co2-accounting ghcr.io/christophamma/dav-co2-accounting:main
 ```
+where `<LOCAL_DATA_DIRECTORY>` is a path to the bills pdf. 
+All persistent data will be saved in this directory.
 
-Run the tool with
-```shell
-poetry run poe co2tool
-```
+You can then access the tool at http://localhost:8866
