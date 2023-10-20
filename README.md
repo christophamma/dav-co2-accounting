@@ -15,7 +15,7 @@ docker pull ghcr.io/christophamma/dav-co2-accounting:main
 
 Run the container with
 ```shell
-docker run -p 8866:8866 -v <LOCAL_DATA_DIRECTORY>:/root/dav-co2-accounting ghcr.io/christophamma/dav-co2-accounting:main
+docker run --rm -p 8866:8866 -v <LOCAL_DATA_DIRECTORY>:/root/dav-co2-accounting ghcr.io/christophamma/dav-co2-accounting:main
 ```
 where `<LOCAL_DATA_DIRECTORY>` is a path to the bills pdf. 
 All persistent data will be saved in this directory.
