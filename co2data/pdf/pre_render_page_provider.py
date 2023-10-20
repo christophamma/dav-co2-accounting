@@ -6,7 +6,7 @@ from wand.image import Image
 from co2data.pdf.page_provider import PageProvider
 
 
-class PreRenderPageProvider(PageProvider):
+class CachingPageProvider(PageProvider):
 
     def __init__(self, page_provider: PageProvider):
         self._page_provider = page_provider
