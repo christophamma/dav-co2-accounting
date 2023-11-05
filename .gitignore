@@ -1,5 +1,10 @@
-pdf/
+/pdf/
 .idea
 __pycache__
-dav_bills/
-datadir
+/dav_bills/
+/dav_bills_all
+/rendered
+/datadir
+*checkpoint.py
+*checkpoint.json
+/tests/pdf/rendered
