@@ -16,7 +16,6 @@ class Position(JSONWizard):
     value: float
     amount: float
     price: float
-    comment: str
     page_on_pdf: int
 
 
@@ -27,6 +26,7 @@ class Bill(JSONWizard):
     file_identifier: str
     positions: List[Position]
     status: BillStatus
+    comment: str
 
     def add_position(self, position: Position, index: int) -> None:
         """Insert position before given index."""

@@ -63,6 +63,13 @@ class BillDataProvider:
         """
         self._bill_store.get(bill_id).status = status
 
+    def get_status(self, bill_id: BillId) -> BillStatus:
+        """
+        Return the bill status.
+        :param bill_id: Bill id to get status for
+        """
+        return self._bill_store.get(bill_id).status
+
     def add_comment(self, bill_id: BillId, comment: str) -> None:
         """
         Add a comment to the bill, existing comment will be overwritten.
@@ -71,3 +78,11 @@ class BillDataProvider:
         :param comment: comment to add
         """
         self._bill_store.get(bill_id).comment = comment
+
+    def get_comment(self, bill_id: BillId) -> str:
+        """
+        Retrieve comment for the given bill id.
+
+        :param bill_id: bill id
+        """
+        return self._bill_store.get(bill_id).comment

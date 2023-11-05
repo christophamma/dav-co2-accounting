@@ -29,5 +29,9 @@ class PersistentBillDataProvider(BillDataProvider):
         super().set_status(bill_id, status)
         self._bill_store.save()
 
+    def add_comment(self, bill_id: BillId, comment: str) -> None:
+        super().add_comment(bill_id, comment)
+        self._bill_store.save()
+
     
  

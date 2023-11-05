@@ -24,5 +24,5 @@ class ConcreteBillStore(BillStore):
             logging.info(f"BillStore: file identifier {file_identifier} already present")
         else:
             bill_id = max(self.bills.keys()) + 1 if len(self.bills.keys()) > 0 else self.first_id
-            bill = Bill(bill_id, file_identifier, [], BillStatus.TO_DO)
+            bill = Bill(bill_id, file_identifier, [], BillStatus.TO_DO, "")
             self.bills[bill_id] = bill
