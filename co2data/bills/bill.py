@@ -17,6 +17,7 @@ class Position(JSONWizard):
     amount: float
     price: float
     page_on_pdf: int
+    included_tax: float = 0.0
 
 
 @dataclass
