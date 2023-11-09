@@ -24,4 +24,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poe.tasks]
-co2tool = "voila notebook/test_ui.ipynb"
+co2tool = "voila --debug notebook/test_ui.ipynb"
