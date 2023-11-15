@@ -2,6 +2,7 @@ import logging
 from functools import cache
 
 from wand.image import Image
+from wand.color import Color
 import PyPDF2
 from co2data.bills.bill_id import BillId
 from co2data.pdf.helpers import get_nr_of_pages_imagemagick, get_nr_of_pages_pypdf2
@@ -25,4 +26,9 @@ class ConcretePageProvider(PageProvider):
 
     def _render_all_pages(self, file_identifier) -> Image:
         with self._pdf_store.get(file_identifier) as filestream:
-            return Image(file=filestream, format="pdf", resolution=150)
+            img = Image(file=filestream,
+                         format="pdf",
+                         resolution=150,
+                         background=Color("white"))
+            img.alpha_channel = "background"
+            return img

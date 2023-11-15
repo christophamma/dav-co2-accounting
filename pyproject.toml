@@ -17,6 +17,7 @@ poethepoet = "^0.22.0"
 jsonpickle = "^3.0.2"
 dataclass-wizard = "^0.22.2"
 pypdf2 = "^3.0.1"
+typer = "^0.9.0"
 
 
 [build-system]
