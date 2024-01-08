@@ -30,9 +30,16 @@ def import_csv(csv_file: TextIO, area: str) -> List[Category]:
     csv_description = 'Beschreibung'
     csv_example = 'Beispiel'
     csv_unit = 'Einheit'
+    csv_co2_by_unit = 'CO2'
+    csv_co2_by_price = 'CO2_EUR'
     category_reader = csv.DictReader(csv_file, delimiter=';')
     categories = []
     for row in category_reader:
         if row[csv_name] != '':
-            categories.append(Category(area, row[csv_name], row[csv_example], row[csv_unit], row[csv_description]))
+            category = Category(area, row[csv_name], row[csv_example], row[csv_unit], row[csv_description])
+            if csv_co2_by_unit in row:
+                category.emission_by_unit = row[csv_co2_by_unit]
+            if csv_co2_by_price in row:
+                category.emission_by_price = row[csv_co2_by_price]
+            categories.append(category)
     return categories

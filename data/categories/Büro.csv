@@ -1,8 +1,8 @@
-Datenpunkt;Beschreibung;Beispiel;Einheit
-Papier - Frischfaser;Kauf von Frischfaser-Papier für z. B. Drucker;5;kg
-Papier - Recycling;Kauf von Recycling-Papier für z. B. Drucker;5;kg
-Drucksachen - Frischfaser;Kauf von bedruckten Frischfaser-Papier Produkten (Drucksachen durch Druckereien);5;kg
-Drucksachen - Kunststoff;Kauf von bedruckten Kunststoff Produkten;5;kg
-Drucksachen - Textil;Kauf von bedruckten Textilien Produkten;5;kg
-Büromaterial (kg);Sonstige Ausgaben zum Bürobedarf und Batterien (z.B. kleinere Produkte, wie Scheren, Locher, Hefter oder Spitzer und Toner genauso wie Ordner, Mappen für die Ablage und Versandmaterial. Auch Schreibartikel wie Stifte und Schreibunterlagen zählen dazu.);10;kg
-Büromöbel (kg);Ausgaben für Büromöbel z.B. Schreibtisch, Schreibtischstuhl;20;kg
+Datenpunkt;Beschreibung;Beispiel;Einheit;CO2
+Papier - Frischfaser;Kauf von Frischfaser-Papier für z. B. Drucker;5;kg;0,992
+Papier - Recycling;Kauf von Recycling-Papier für z. B. Drucker;5;kg;1,6
+Drucksachen - Frischfaser;Kauf von bedruckten Frischfaser-Papier Produkten (Drucksachen durch Druckereien);5;kg;0,836
+Drucksachen - Kunststoff;Kauf von bedruckten Kunststoff Produkten;5;kg;5,37
+Drucksachen - Textil;Kauf von bedruckten Textilien Produkten;5;kg;1,57
+Büromaterial (kg);Sonstige Ausgaben zum Bürobedarf und Batterien (z.B. kleinere Produkte, wie Scheren, Locher, Hefter oder Spitzer und Toner genauso wie Ordner, Mappen für die Ablage und Versandmaterial. Auch Schreibartikel wie Stifte und Schreibunterlagen zählen dazu.);10;kg;15,6
+Büromöbel (kg);Ausgaben für Büromöbel z.B. Schreibtisch, Schreibtischstuhl;20;kg;2,57

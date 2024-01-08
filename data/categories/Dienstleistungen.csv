@@ -1,23 +1,23 @@
-Datenpunkt;Beschreibung;Beispiel;Einheit
-Hubschrauberflüge;Flugminuten der Hubschrauberflüge (nur Versorgungsflüge, keine Flüge für Baumaßnahmen);60;Min
-Beratungsdienstleistungen;Ausgaben für Beratungsdienstleistungen aller Art, falls diese nicht bereits durch andere Kategorien abgedeckt werden, z.B. Strategieberatung;100;EUR
-Catering & Restaurants;Ausgaben für Lieferanten, Catering Services, Geschäftsessen, die nicht im Rahmen der Veranstaltungsaktivitäten erfasst werden ;100;EUR
-Finanzdienstleistungen;"Ausgaben für Finanzdienstleistungen. z.B. Finanzberatung, Bankgebühren etc.; Ausnahme: Versicherung und Rentenfinanzierung (s. ""Versicherungen"") ";100;EUR
-Freelance-Dienstleistungen;Ausgaben für Freelancer/Freiberufler*innen, die nicht schon unter einer anderen Kategorie erfasst werden z.B. Gehalt von Freelancern, Leiharbeiter, Photograph, Grafiker, etc. Achtung: Honorarkräfte, die an Veranstaltungsaktivitäten teilnehmen, werden mit ihrer Mobilität, Übernachtung etc. dort bilanziert.;100;EUR
-Gebäudemanagement;Ausgaben für Gebäudewartung z.B. Kosten für die Instandhaltung, Sanierung, Hausmeister, Gärtner, Hausverwaltung, Grundstücksaufwendungen etc.;100;EUR
-IT-Dienstleistungen;Ausgaben für Computerprogramme, IT-Beratung, Web-Hosting, Datenverarbeitung, Softwarelizenzen, z.B. Geleaste Datenzentren, Softwaregebühren, Subscriptions, IT-Support;100;EUR
-Kauf von Immobilien;Ausgaben für Dienstleistungen beim Kauf von Immobilien z.B. Immobilienbewertung, Maklergebühr, Notargebühr;100;EUR
-Kinderbetreuung;Ausgaben für Kinderbetreuung z.B. Kinderbetreuung während Veranstaltungen;100;EUR
-Marketingdienstleistungen;Ausgaben für PR, Marktforschung z.B. Umfragen;100;EUR
-Miete von Immobilien;Ausgaben für Kaltmiete von Immobilien, exklusive Gebäude für welche der Verbrauch bereits direkt/über Fallbacks berücksichtigt wird ;100;EUR
-Rechts- und Buchhaltungsdienstleistungen;Ausgaben für Rechtliches und Buchhaltungsdienstleistungen, solange nicht von eigenen Angestellten ausgeübt z.B. Rechtsberatung, Buchführungskosten, Abschluss- und Prüfungskosten;100;EUR
-Reinigungsdienstleistungen;Ausgaben im Zusammenhang mit Reinigungsdienstleistungen z.B. Reinigungsservice;100;EUR
-Reisebüro und verwandte Tätigkeiten;Ausgaben für Reisebüros oder Ähnliches, Planung von Geschäftsreisen z.B. Online Reisebüro Service, Analoges Reisebüro;100;EUR
-Reparatur ;Ausgaben für die Wartung und Reparatur von Computern und Kommunikationsequipment (z.B. Telefone oder die Internetverbindung), elektrischen Geräten (z.B. Kaffeemaschine, Lampen), Maschinen und Haushaltsgüter (z.B. Instandhaltung von Büroausstattung, Wartung, Wartungsaufwand/kosten, etc.);100;EUR
+Datenpunkt;Beschreibung;Beispiel;Einheit;CO2
+Hubschrauberflüge;Flugminuten der Hubschrauberflüge (nur Versorgungsflüge, keine Flüge für Baumaßnahmen);60;Min;8,35
+Beratungsdienstleistungen;Ausgaben für Beratungsdienstleistungen aller Art, falls diese nicht bereits durch andere Kategorien abgedeckt werden, z.B. Strategieberatung;100;EUR;0,169
+Catering & Restaurants;Ausgaben für Lieferanten, Catering Services, Geschäftsessen, die nicht im Rahmen der Veranstaltungsaktivitäten erfasst werden ;100;EUR;0,169
+Finanzdienstleistungen;"Ausgaben für Finanzdienstleistungen. z.B. Finanzberatung, Bankgebühren etc.; Ausnahme: Versicherung und Rentenfinanzierung (s. ""Versicherungen"") ";100;EUR;0,105
+Freelance-Dienstleistungen;Ausgaben für Freelancer/Freiberufler*innen, die nicht schon unter einer anderen Kategorie erfasst werden z.B. Gehalt von Freelancern, Leiharbeiter, Photograph, Grafiker, etc. Achtung: Honorarkräfte, die an Veranstaltungsaktivitäten teilnehmen, werden mit ihrer Mobilität, Übernachtung etc. dort bilanziert.;100;EUR;0,169
+Gebäudemanagement;Ausgaben für Gebäudewartung z.B. Kosten für die Instandhaltung, Sanierung, Hausmeister, Gärtner, Hausverwaltung, Grundstücksaufwendungen etc.;100;EUR;0,092
+IT-Dienstleistungen;Ausgaben für Computerprogramme, IT-Beratung, Web-Hosting, Datenverarbeitung, Softwarelizenzen, z.B. Geleaste Datenzentren, Softwaregebühren, Subscriptions, IT-Support;100;EUR;0,133
+Kauf von Immobilien;Ausgaben für Dienstleistungen beim Kauf von Immobilien z.B. Immobilienbewertung, Maklergebühr, Notargebühr;100;EUR;0,092
+Kinderbetreuung;Ausgaben für Kinderbetreuung z.B. Kinderbetreuung während Veranstaltungen;100;EUR;0,133
+Marketingdienstleistungen;Ausgaben für PR, Marktforschung z.B. Umfragen;100;EUR;0,169
+Miete von Immobilien;Ausgaben für Kaltmiete von Immobilien, exklusive Gebäude für welche der Verbrauch bereits direkt/über Fallbacks berücksichtigt wird ;100;EUR;0,092
+Rechts- und Buchhaltungsdienstleistungen;Ausgaben für Rechtliches und Buchhaltungsdienstleistungen, solange nicht von eigenen Angestellten ausgeübt z.B. Rechtsberatung, Buchführungskosten, Abschluss- und Prüfungskosten;100;EUR;0,169
+Reinigungsdienstleistungen;Ausgaben im Zusammenhang mit Reinigungsdienstleistungen z.B. Reinigungsservice;100;EUR;0,169
+Reisebüro und verwandte Tätigkeiten;Ausgaben für Reisebüros oder Ähnliches, Planung von Geschäftsreisen z.B. Online Reisebüro Service, Analoges Reisebüro;100;EUR;0,181
+Reparatur ;Ausgaben für die Wartung und Reparatur von Computern und Kommunikationsequipment (z.B. Telefone oder die Internetverbindung), elektrischen Geräten (z.B. Kaffeemaschine, Lampen), Maschinen und Haushaltsgüter (z.B. Instandhaltung von Büroausstattung, Wartung, Wartungsaufwand/kosten, etc.);100;EUR;0,027
 Personaldienstleistungen;Ausgaben für HR-Beratung und Provisionen z.B. Fremdkosten für Recruiting-Services, Sourcing, Personalbeschaffungskosten, Personaldienste/kosten;100;EUR
-Post & Telekommunikation;Ausgaben für Telefon- und Internetservices, Postversand, Kurierdienste z.B. Versand, Versandkosten, Mobilfunkgebühren, Telefonkosten, Internetkosten, Postkosten, DSL;100;EUR
-Sicherheitsdienstleistungen;Ausgaben für Sicherheitsdienstleistungen aller Art, von Gebäude- über Personenschutz z.B. Sicherheitsdienst, Personenschutz;100;EUR
-Versicherungen;Ausgaben für Versicherungen und Rentenfinanzierungen (exkl. gesetzl. Sozialversicherung), z.B. Kfz-Versicherung, Gebäudeversicherung, Geschäftsversicherung, Haftpflichtversicherungen;100;EUR
-Weiterbildung/Training;Ausgaben für Fortbildungen z.B. Schulung, Weiterbildung, Ausbildung, Workshops, Konferenzen, Online-Kurse ;100;EUR
-Werbung ;Ausgaben für Werbung über Social Media (z.B. Bezahlung von Influencern, Affiliate Links), im öffentlichen Raum (z.B. Plakate an Haltestellen), gedruckte Werbung (z.B. Werbung in Zeitschriften, Flyer usw.), für TV-Werbespots im Fernsehen und sonstige Ausgaben für Werbung;100;EUR
-Andere Geschäftsaktivitäten;Alle Ausgaben, die nicht unter einer anderen Kategorie erfasst werden können z.B. Übersetzungsdienste, Fotografie, Spenden an NGOs etc.;100;EUR
+Post & Telekommunikation;Ausgaben für Telefon- und Internetservices, Postversand, Kurierdienste z.B. Versand, Versandkosten, Mobilfunkgebühren, Telefonkosten, Internetkosten, Postkosten, DSL;100;EUR;0,092
+Sicherheitsdienstleistungen;Ausgaben für Sicherheitsdienstleistungen aller Art, von Gebäude- über Personenschutz z.B. Sicherheitsdienst, Personenschutz;100;EUR;0,169
+Versicherungen;Ausgaben für Versicherungen und Rentenfinanzierungen (exkl. gesetzl. Sozialversicherung), z.B. Kfz-Versicherung, Gebäudeversicherung, Geschäftsversicherung, Haftpflichtversicherungen;100;EUR;0,11
+Weiterbildung/Training;Ausgaben für Fortbildungen z.B. Schulung, Weiterbildung, Ausbildung, Workshops, Konferenzen, Online-Kurse ;100;EUR;0,063
+Werbung ;Ausgaben für Werbung über Social Media (z.B. Bezahlung von Influencern, Affiliate Links), im öffentlichen Raum (z.B. Plakate an Haltestellen), gedruckte Werbung (z.B. Werbung in Zeitschriften, Flyer usw.), für TV-Werbespots im Fernsehen und sonstige Ausgaben für Werbung;100;EUR;0,169
+Andere Geschäftsaktivitäten;Alle Ausgaben, die nicht unter einer anderen Kategorie erfasst werden können z.B. Übersetzungsdienste, Fotografie, Spenden an NGOs etc.;100;EUR;0,169

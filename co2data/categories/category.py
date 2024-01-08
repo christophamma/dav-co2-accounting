@@ -9,3 +9,5 @@ class Category:
     example: str
     unit: str
     description: Optional[str] = None
+    emission_by_unit: Optional[float] = None
+    emission_by_price: Optional[float] = None

@@ -1,15 +1,15 @@
-Datenpunkt;Beschreibung;Beispiel;Einheit
-Ausrüstung;z.B. Klettergriffe, Klettergurt, Exen, Seile, Schlingen, Ski, Alpinhelm, Schrauben, Karabiner, usw.;100;EUR
-(Arbeits-)Kleidung;z.B. Schuhe, Stiefel, Jacke, T-Shirt, Skihose, Rucksack, usw.;300;EUR
-Heimtextilien;z.B. Handtücher, Saunatücher, Badetücher, Duschtücher, Decken, Kissen, Spannbettlaken usw.;100;EUR
-Matratzen ;z.B. Federmatratzen, Schaummatratzen usw.;500;EUR
-Fahrräder;Kauf von Rennrad, Mountainbike usw.;500;EUR
+Datenpunkt;Beschreibung;Beispiel;Einheit;CO2
+Ausrüstung;z.B. Klettergriffe, Klettergurt, Exen, Seile, Schlingen, Ski, Alpinhelm, Schrauben, Karabiner, usw.;100;EUR;0,242
+(Arbeits-)Kleidung;z.B. Schuhe, Stiefel, Jacke, T-Shirt, Skihose, Rucksack, usw.;300;EUR;0,279
+Heimtextilien;z.B. Handtücher, Saunatücher, Badetücher, Duschtücher, Decken, Kissen, Spannbettlaken usw.;100;EUR;0,353
+Matratzen ;z.B. Federmatratzen, Schaummatratzen usw.;500;EUR;0,242
+Fahrräder;Kauf von Rennrad, Mountainbike usw.;500;EUR;0,236
 E-Bikes;Kauf von E-Bikes, Pedelecs;500;EUR
-Kraftfahrzeuge (Kauf);Kauf von Fahrzeugen z.B. PKW, LKW, Elektrofahrzeuge, Kfz-Reparaturen, Kfz-Betriebskosten (inkludiert keine Kosten, die durch die Nutzung dieser Fahrzeuge entstehen);100;EUR
-Kraftfahrzeuge (Leasing);Leasing von Fahrzeugen z.B. PKW, LKW, Elektrofahrzeuge, KfZ-Reparaturen, Kfz-Betriebskosten (inkludiert keine Kosten, die durch die Nutzung dieser Fahrzeuge entstehen);100;EUR
-Elektrogeräte (Kauf);Kauf von Haushaltsgeräten, Küchengeräte, Kaffeemaschinen und Bürogeräte wie Drucker, Kopierer, ebenso wie IT-Ausstattung z.B. Computer, Notebooks, Bildschirme, Headsets, Webcams;100;EUR
+Kraftfahrzeuge (Kauf);Kauf von Fahrzeugen z.B. PKW, LKW, Elektrofahrzeuge, Kfz-Reparaturen, Kfz-Betriebskosten (inkludiert keine Kosten, die durch die Nutzung dieser Fahrzeuge entstehen);100;EUR;0,279
+Kraftfahrzeuge (Leasing);Leasing von Fahrzeugen z.B. PKW, LKW, Elektrofahrzeuge, KfZ-Reparaturen, Kfz-Betriebskosten (inkludiert keine Kosten, die durch die Nutzung dieser Fahrzeuge entstehen);100;EUR;0,087
+Elektrogeräte (Kauf);Kauf von Haushaltsgeräten, Küchengeräte, Kaffeemaschinen und Bürogeräte wie Drucker, Kopierer, ebenso wie IT-Ausstattung z.B. Computer, Notebooks, Bildschirme, Headsets, Webcams;100;EUR;0,248
 Elektrogeräte (Leasing);Leasing von Haushaltsgeräten, Küchengeräte, Kaffeemaschinen und Bürogeräte wie Drucker, Kopierer, ebenso wie IT-Ausstattung z.B. Computer, Notebooks, Bildschirme, Headsets, Webcams;100;EUR
-Kommunikationsausstattung (Kauf);Kauf von Kommunikationsequipment z.B. Telefon, Smartphone (keine Vertragskosten, diese werden unter Dienstleistungen bilanziert);100;EUR
-Kommunikationsausstattung (Leasing);Leasing von Kommunikationsequipment z.B. Telefon, Smartphone (keine Vertragskosten, diese werden unter Dienstleistungen bilanziert);100;EUR
-Werkzeug & Reparaturmaterial;Kauf von z.B. Schraubenzieher, Nägel, Klebeband, Zange etc. ;100;EUR
-Merchandising;Ausgaben für die Produktion und den Kauf und Verkauf von Merchandising Artikeln, falls nicht schon von den anderen Kategorien abgedeckt z.B. Kauf von Fanartikeln;100;EUR
+Kommunikationsausstattung (Kauf);Kauf von Kommunikationsequipment z.B. Telefon, Smartphone (keine Vertragskosten, diese werden unter Dienstleistungen bilanziert);100;EUR;0,235
+Kommunikationsausstattung (Leasing);Leasing von Kommunikationsequipment z.B. Telefon, Smartphone (keine Vertragskosten, diese werden unter Dienstleistungen bilanziert);100;EUR;0,081
+Werkzeug & Reparaturmaterial;Kauf von z.B. Schraubenzieher, Nägel, Klebeband, Zange etc. ;100;EUR;0,257
+Merchandising;Ausgaben für die Produktion und den Kauf und Verkauf von Merchandising Artikeln, falls nicht schon von den anderen Kategorien abgedeckt z.B. Kauf von Fanartikeln;100;EUR;0,169
